@@ -1,7 +1,6 @@
-# 🎾 Tennis Match Outcome Prediction | 网球比赛结果预测
+# 🎾 Tennis Match Outcome Prediction  
 
 A machine learning and ensemble learning-based system for predicting professional tennis match outcomes.  
-基于机器学习与集成学习的职业网球比赛胜负预测系统。
 
 <!-- Banner -->
 <div align="center">
@@ -17,83 +16,77 @@ A machine learning and ensemble learning-based system for predicting professiona
 
 ---
 
-## 🗂️ Project Overview | 项目概览
+## 🗂️ Project Overview  
 
-This project develops a predictive model for professional tennis match outcomes by integrating multiple ensemble learning methods. Using historical ATP and WTA match data, we engineered features such as player performance metrics, surface-adjusted statistics, and fatigue indices, then applied model ensembles for robust predictions across different tournament types and surfaces.
+This project develops a predictive framework for professional tennis match outcomes by integrating multiple **ensemble learning** methods. Leveraging historical ATP and WTA match records, we perform **feature engineering** to construct player performance metrics, surface-adjusted statistics, and fatigue indices. We then train an ensemble of models to produce robust predictions across different tournament types and playing surfaces.
 
-本项目基于 ATP 和 WTA 历史比赛数据，通过特征工程构建球员表现指标、场地调整统计量和疲劳指数，结合多种集成学习方法实现职业网球比赛结果预测，适用于不同类型和场地的赛事。
-
-We focus on five core tasks:
-- 📊 Data acquisition and preprocessing from ATP/WTA databases  
-- 🏟️ Feature engineering with surface-adjusted stats and fatigue metrics  
-- 🤖 Model training using Gradient Boosting, Random Forest, Logistic Regression  
-- 🧠 Ensemble learning via soft voting for performance stability  
-- 📈 Model evaluation and feature importance interpretation (SHAP)  
+**Core Objectives:**
+- 📊 Acquire and preprocess data from ATP/WTA databases  
+- 🏟️ Engineer features including surface-adjusted statistics and fatigue metrics  
+- 🤖 Train models using Gradient Boosting, Random Forest, and Logistic Regression  
+- 🧠 Apply soft voting ensemble for prediction stability  
+- 📈 Evaluate models and interpret feature importance using SHAP  
 
 ---
 
-## 📦 Installation | 安装方式  
+## 📦 Installation  
 
-``` bash
+```bash
 git clone https://github.com/Yingurt001/Tennis-Match-Prediction.git
 cd Tennis-Match-Prediction
 pip install -r requirements.txt
 ```
+## 🎯 Dataset Description  
 
+### 📌 Data Sources  
+- **ATP/WTA Official Match Records** – Includes player names, ATP/WTA rankings, match dates, tournament types, court surfaces, and detailed match statistics.  
+- **Coverage** – Grand Slam events, Masters 1000 tournaments, ATP/WTA Tour matches.  
 
-
-## 🎯 Dataset Description | 数据集说明
-
-### 📌 Source 数据来源
-- **ATP/WTA official match records**: player names, rankings, match dates, tournament types, surfaces, in-match statistics  
-- **Coverage**: Grand Slam, Masters 1000, ATP/WTA Tour events  
-
-### 🔑 Key Features 核心特征
-- 🎯 Serve performance metrics (First Serve %, Aces, Double Faults)  
-- 🛡️ Return performance indicators (Break Point Conversion, Return Points Won)  
-- 🏃 Fatigue index (based on consecutive matches, travel distance, tournament stage)  
-- 🏟️ Surface-adjusted win rates  
+### 🔑 Key Features  
+- 🎯 **Serve performance metrics** – First serve percentage, number of aces, and double faults.  
+- 🛡️ **Return performance indicators** – Break point conversion rate, return points won.  
+- 🏃 **Fatigue index** – Computed from consecutive matches, travel distances, and tournament stage.  
+- 🏟️ **Surface-adjusted win rates** – Adjusted for differences in performance on hard, clay, and grass surfaces.  
 
 ---
 
-## ⚙️ Methodology | 方法流程
+## ⚙️ Methodology  
 
-### 1️⃣ Data Preprocessing | 数据预处理
-- Remove incomplete records and unify categorical formats  
-- Encode court surface, tournament type, and player identifiers  
-- Handle missing stats via median imputation  
+### 1️⃣ Data Preprocessing  
+- Remove incomplete match records and unify categorical formats.  
+- Encode court surface, tournament type, and player identifiers.  
+- Handle missing numerical statistics using median imputation.  
 
-### 2️⃣ Feature Engineering | 特征工程
-- Calculate surface-adjusted statistics to account for performance variability  
-- Build fatigue index combining rest days, travel, and match load  
+### 2️⃣ Feature Engineering  
+- Calculate **surface-adjusted statistics** to account for performance variations by surface type.  
+- Construct a **fatigue index** incorporating rest days, travel burden, and cumulative match load.  
 
-### 3️⃣ Modeling | 建模
-- Gradient Boosting (XGBoost / LightGBM)  
-- Random Forest Classifier  
-- Logistic Regression  
-- Ensemble via soft voting to combine model strengths  
+### 3️⃣ Modeling  
+- Train base models:  
+  - Gradient Boosting (XGBoost / LightGBM)  
+  - Random Forest Classifier  
+  - Logistic Regression  
+- Combine model predictions using **soft voting ensemble** for improved stability.  
 
-### 4️⃣ Evaluation | 评估
-- Nested cross-validation for unbiased performance estimation  
-- ROC-AUC, accuracy, precision, recall metrics  
-- SHAP values for interpretability  
+### 4️⃣ Evaluation  
+- Apply **nested cross-validation** for unbiased model performance estimation.  
+- Metrics used: **ROC-AUC**, accuracy, precision, recall.  
+- Analyze **feature importance** using SHAP values for interpretability.  
 
 ---
 
-## 📊 Results | 结果展示
+## 📊 Results  
 
 <p align="center">
   <img src="Result/Momentum.png" width="45%">
 </p>
 
-
-
-
 ---
 
+## 👨‍💻 Project Maintainers  
 
-### 👨‍💻 Project Maintainers
-Thanks goes to these wonderful people:
+Thanks to these contributors:  
+
 <table>
   <tr>
     <td align="center">
@@ -126,14 +119,19 @@ Thanks goes to these wonderful people:
 
 ---
 
-## 🎓 Citation | 引用
-If you use this work, please cite:
-> Zhang, Y., [CoAuthor1], [CoAuthor2]. *Tennis Match Outcome Prediction via Ensemble Learning*. 2024.
+## 🎓 Citation  
+
+If you use this work, please cite:  
+> Zhang, Y., [CoAuthor1], [CoAuthor2]. *Tennis Match Outcome Prediction via Ensemble Learning*. 2024.  
 
 ---
 
 <div align="center">
-  <b>⭐ If you find this project useful, consider giving it a star to support our work!</b>  
+  <b>⭐ If you find this project useful, please consider giving it a star!</b>  
   <br>  
-  <em>From data cleaning to match-winning predictions — tennis analytics made smarter.</em>
+  <em>From historical match data to accurate victory predictions — smarter tennis analytics for the modern game.</em>
 </div>
+
+
+
+
