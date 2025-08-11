@@ -84,12 +84,12 @@ pip install -r requirements.txt
 
 <p align="center">
   <img src="Result/Momentum.png" width="45%">
-  <img src="Result/WeChatIMG10969.png" width="45%">
+  <img src="Result/WeChatIMG10969.jpeg" width="45%">
 </p>
 
 <p align="center">
-  <img src="Result/WeChatIMG11001.png" width="45%">
-  <img src="Result/WeChatIMG11005.png" width="45%">
+  <img src="Result/WeChatIMG11001.jpeg" width="45%">
+  <img src="Result/WeChatIMG11005.jpeg" width="45%">
 </p>
 
 <p align="center">
