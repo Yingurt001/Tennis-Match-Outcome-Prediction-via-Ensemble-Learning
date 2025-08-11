@@ -84,48 +84,10 @@ pip install -r requirements.txt
 
 <p align="center">
   <img src="Result/Momentum.png" width="45%">
-  <img src="Result/WeChatIMG10969.png" width="45%">
 </p>
 
-<p align="center">
-  <img src="Result/WeChatIMG11001.png" width="45%">
-  <img src="Result/WeChatIMG11005.png" width="45%">
-</p>
 
-<p align="center">
-  <img src="Result/WeChatIMG11007.png" width="45%">
-  <img src="Result/WeChatIMG11008.png" width="45%">
-</p>
 
-<p align="center">
-  <img src="Result/WeChatIMG11009.png" width="45%">
-  <img src="Result/WeChatIMG11032.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="Result/WeChatIMG11034.png" width="45%">
-  <img src="Result/WeChatIMG11046.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="Result/WeChatIMG11073.png" width="45%">
-  <img src="Result/WeChatIMG11105.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="Result/WeChatIMG11114.png" width="45%">
-  <img src="Result/WeChatIMG11116.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="Result/WeChatIMG11147.png" width="45%">
-  <img src="Result/WeChatIMG11150.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="Result/WeChatIMG13176.png" width="45%">
-  <img src="Result/WeChatIMG14652.png" width="45%">
-</p>
 
 ---
 
