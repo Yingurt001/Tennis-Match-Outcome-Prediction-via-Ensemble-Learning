@@ -5,7 +5,7 @@ A machine learning and ensemble learning-based system for predicting professiona
 
 <!-- Banner -->
 <div align="center">
-  <img src="Assets/Banner_Tennis.png" width="100%" alt="Project Banner">
+  <img src="Result/Banner_Tennis.png" width="100%" alt="Project Banner">
 </div>
 
 <!-- Badges -->
@@ -83,48 +83,48 @@ pip install -r requirements.txt
 ## 📊 Results | 结果展示
 
 <p align="center">
-  <img src="Assets/Momentum.png" width="45%">
-  <img src="Assets/WeChatIMG10969.png" width="45%">
+  <img src="Result/Momentum.png" width="45%">
+  <img src="Result/WeChatIMG10969.png" width="45%">
 </p>
 
 <p align="center">
-  <img src="Assets/WeChatIMG11001.png" width="45%">
-  <img src="Assets/WeChatIMG11005.png" width="45%">
+  <img src="Result/WeChatIMG11001.png" width="45%">
+  <img src="Result/WeChatIMG11005.png" width="45%">
 </p>
 
 <p align="center">
-  <img src="Assets/WeChatIMG11007.jpeg" width="45%">
-  <img src="Assets/WeChatIMG11008.jpeg" width="45%">
+  <img src="Result/WeChatIMG11007.jpeg" width="45%">
+  <img src="Result/WeChatIMG11008.jpeg" width="45%">
 </p>
 
 <p align="center">
-  <img src="Assets/WeChatIMG11009.jpeg" width="45%">
-  <img src="Assets/WeChatIMG11032.jpeg" width="45%">
+  <img src="Result/WeChatIMG11009.jpeg" width="45%">
+  <img src="Result/WeChatIMG11032.jpeg" width="45%">
 </p>
 
 <p align="center">
-  <img src="Assets/WeChatIMG11034.jpeg" width="45%">
-  <img src="Assets/WeChatIMG11046.jpeg" width="45%">
+  <img src="Result/WeChatIMG11034.jpeg" width="45%">
+  <img src="Result/WeChatIMG11046.jpeg" width="45%">
 </p>
 
 <p align="center">
-  <img src="Assets/WeChatIMG11073.png" width="45%">
-  <img src="Assets/WeChatIMG11105.png" width="45%">
+  <img src="Result/WeChatIMG11073.png" width="45%">
+  <img src="Result/WeChatIMG11105.png" width="45%">
 </p>
 
 <p align="center">
-  <img src="Assets/WeChatIMG11114.jpeg" width="45%">
-  <img src="Assets/WeChatIMG11116.png" width="45%">
+  <img src="Result/WeChatIMG11114.jpeg" width="45%">
+  <img src="Result/WeChatIMG11116.png" width="45%">
 </p>
 
 <p align="center">
-  <img src="Assets/WeChatIMG11147.png" width="45%">
-  <img src="Assets/WeChatIMG11150.jpeg" width="45%">
+  <img src="Result/WeChatIMG11147.png" width="45%">
+  <img src="Result/WeChatIMG11150.jpeg" width="45%">
 </p>
 
 <p align="center">
-  <img src="Assets/WeChatIMG13176.jpeg" width="45%">
-  <img src="Assets/WeChatIMG14652.jpeg" width="45%">
+  <img src="Result/WeChatIMG13176.jpeg" width="45%">
+  <img src="Result/WeChatIMG14652.jpeg" width="45%">
 </p>
 
 ---
