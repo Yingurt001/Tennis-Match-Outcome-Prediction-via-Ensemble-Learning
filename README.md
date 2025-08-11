@@ -81,6 +81,14 @@ pip install -r requirements.txt
   <img src="Result/Momentum.png" width="45%">
 </p>
 
+<p align="center">
+  <img src="Asset/Result_1.png" width="70%" alt="Result 1">
+</p>
+<p align="center">
+  <img src="Asset/Result_2.png" width="70%" alt="Result 2">
+</p>
+
+
 ---
 
 ## 👨‍💻 Project Maintainers  
