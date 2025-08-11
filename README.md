@@ -4,7 +4,7 @@ A machine learning and ensemble learning-based system for predicting professiona
 
 <!-- Banner -->
 <div align="center">
-  <img src="Result/Banner_Tennis.png" width="100%" alt="Project Banner">
+  <img src="Asset/Banner.png" width="100%" alt="Project Banner">
 </div>
 
 <!-- Badges -->
