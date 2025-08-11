@@ -129,10 +129,9 @@ pip install -r requirements.txt
 
 ---
 
-## 👨‍💻 Project Maintainers | 项目作者
 
-Thanks goes to these wonderful people for their contributions:
-
+### 👨‍💻 Project Maintainers
+Thanks goes to these wonderful people:
 <table>
   <tr>
     <td align="center">
@@ -143,17 +142,17 @@ Thanks goes to these wonderful people for their contributions:
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/000000?v=4" width="100px;" alt="CoAuthor1"/>
+      <a href="https://github.com/Alex-TtTT">
+        <img src="https://avatars.githubusercontent.com/u/223631305?v=4" width="100px;" alt="Alex-TtTT"/>
         <br />
-        <sub><b>Co-Author 1</b></sub>
+        <sub><b>Alex Hua</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/000000?v=4" width="100px;" alt="CoAuthor2"/>
+      <a href="https://github.com/Lychee-1013z">
+        <img src="https://avatars.githubusercontent.com/u/221976648?v=4" width="100px;" alt="Lychee-1013z"/>
         <br />
-        <sub><b>Co-Author 2</b></sub>
+        <sub><b>Yuzhi Zheng</b></sub>
       </a>
     </td>
   </tr>
