@@ -1,60 +1,176 @@
-# Tennis Match Outcome Prediction via Ensemble Learning
+# 🎾 Tennis Match Outcome Prediction | 网球比赛结果预测
 
-## 📌 Overview
-This project develops a predictive model for professional tennis match outcomes by integrating multiple ensemble learning methods. Using historical ATP and WTA match data, we extract player-specific and match-specific features, optimize model performance through hyperparameter tuning, and evaluate predictive accuracy across different tournament surfaces.  
-> Independent research project (2024) focused on data-driven sports analytics.
+A machine learning and ensemble learning-based system for predicting professional tennis match outcomes.  
+基于机器学习与集成学习的职业网球比赛胜负预测系统。
 
-## 📂 Contents
-- **Data collection**: Historical match statistics from ATP/WTA sources.
-- **Feature engineering**: Player performance metrics, surface-adjusted stats, fatigue index.
-- **Modeling**: Gradient Boosting, Random Forest, Logistic Regression.
-- **Model evaluation**: Nested cross-validation, accuracy and ROC-AUC.
-- **Interpretability**: Feature importance analysis for performance drivers.
+<!-- Banner -->
+<div align="center">
+  <img src="Assets/Banner_Tennis.png" width="100%" alt="Project Banner">
+</div>
 
-## 📊 Methodology
-1. **Data Acquisition & Cleaning**
-   - Collected match results, player rankings, and in-match statistics (serve %, aces, break points).
-   - Removed incomplete records and standardized feature formats.
+<!-- Badges -->
+<div align="center">
+  <img src="https://img.shields.io/github/stars/Yingurt001/Tennis-Match-Prediction" alt="Stars">
+  <img src="https://img.shields.io/github/license/Yingurt001/Tennis-Match-Prediction" alt="License">
+  <img src="https://img.shields.io/badge/python-3.10+-blue" alt="Python Version">
+</div>
 
-2. **Feature Engineering**
-   - Constructed **serve performance metrics** (first serve %, ace rate, double fault rate).
-   - Built **return performance indicators** (break point conversion, return points won).
-   - Added **fatigue index** based on consecutive matches, travel distance, and tournament stage.
-   - Adjusted player stats for **court surface** (hard, clay, grass).
+---
 
-3. **Modeling Approach**
-   - Implemented three base models:
-     - **Gradient Boosting Classifier** (XGBoost/LightGBM)
-     - **Random Forest Classifier**
-     - **Logistic Regression**
-   - Combined predictions using **soft voting** ensemble method.
+## 🗂️ Project Overview | 项目概览
 
-4. **Hyperparameter Tuning & Validation**
-   - Applied nested cross-validation (outer loop for evaluation, inner loop for tuning).
-   - Optimized parameters such as learning rate, max depth, and regularization strength.
+This project develops a predictive model for professional tennis match outcomes by integrating multiple ensemble learning methods. Using historical ATP and WTA match data, we engineered features such as player performance metrics, surface-adjusted statistics, and fatigue indices, then applied model ensembles for robust predictions across different tournament types and surfaces.
 
-5. **Model Interpretation**
-   - Used permutation feature importance and SHAP values to identify key factors influencing match outcome predictions.
-   - Found serve-related metrics and surface-adjusted performance indicators as top predictors.
+本项目基于 ATP 和 WTA 历史比赛数据，通过特征工程构建球员表现指标、场地调整统计量和疲劳指数，结合多种集成学习方法实现职业网球比赛结果预测，适用于不同类型和场地的赛事。
 
-## 📈 Key Results
-- **Best Accuracy**: 85% on Grand Slam test set.
-- **Top Features**:
-  - First serve win percentage
-  - Break point conversion rate
-  - Surface-adjusted win rate
-  - Fatigue index
-- Performance varies by surface, with higher predictive accuracy on hard and grass courts than clay.
+We focus on five core tasks:
+- 📊 Data acquisition and preprocessing from ATP/WTA databases  
+- 🏟️ Feature engineering with surface-adjusted stats and fatigue metrics  
+- 🤖 Model training using Gradient Boosting, Random Forest, Logistic Regression  
+- 🧠 Ensemble learning via soft voting for performance stability  
+- 📈 Model evaluation and feature importance interpretation (SHAP)  
 
-## 🛠️ Reproducibility
-**Requirements**
+---
+
+## 📦 Installation | 安装方式  
+
 ```bash
-python>=3.10
-pandas
-numpy
-scikit-learn
-xgboost
-lightgbm
-matplotlib
-seaborn
-shap
+git clone https://github.com/Yingurt001/Tennis-Match-Prediction.git
+cd Tennis-Match-Prediction
+pip install -r requirements.txt
+
+
+## 🎯 Dataset Description | 数据集说明
+
+### 📌 Source 数据来源
+- **ATP/WTA official match records**: player names, rankings, match dates, tournament types, surfaces, in-match statistics  
+- **Coverage**: Grand Slam, Masters 1000, ATP/WTA Tour events  
+
+### 🔑 Key Features 核心特征
+- 🎯 Serve performance metrics (First Serve %, Aces, Double Faults)  
+- 🛡️ Return performance indicators (Break Point Conversion, Return Points Won)  
+- 🏃 Fatigue index (based on consecutive matches, travel distance, tournament stage)  
+- 🏟️ Surface-adjusted win rates  
+
+---
+
+## ⚙️ Methodology | 方法流程
+
+### 1️⃣ Data Preprocessing | 数据预处理
+- Remove incomplete records and unify categorical formats  
+- Encode court surface, tournament type, and player identifiers  
+- Handle missing stats via median imputation  
+
+### 2️⃣ Feature Engineering | 特征工程
+- Calculate surface-adjusted statistics to account for performance variability  
+- Build fatigue index combining rest days, travel, and match load  
+
+### 3️⃣ Modeling | 建模
+- Gradient Boosting (XGBoost / LightGBM)  
+- Random Forest Classifier  
+- Logistic Regression  
+- Ensemble via soft voting to combine model strengths  
+
+### 4️⃣ Evaluation | 评估
+- Nested cross-validation for unbiased performance estimation  
+- ROC-AUC, accuracy, precision, recall metrics  
+- SHAP values for interpretability  
+
+---
+
+## 📊 Results | 结果展示
+
+<p align="center">
+  <img src="Assets/Momentum.png" width="45%">
+  <img src="Assets/WeChatIMG10969.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="Assets/WeChatIMG11001.png" width="45%">
+  <img src="Assets/WeChatIMG11005.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="Assets/WeChatIMG11007.jpeg" width="45%">
+  <img src="Assets/WeChatIMG11008.jpeg" width="45%">
+</p>
+
+<p align="center">
+  <img src="Assets/WeChatIMG11009.jpeg" width="45%">
+  <img src="Assets/WeChatIMG11032.jpeg" width="45%">
+</p>
+
+<p align="center">
+  <img src="Assets/WeChatIMG11034.jpeg" width="45%">
+  <img src="Assets/WeChatIMG11046.jpeg" width="45%">
+</p>
+
+<p align="center">
+  <img src="Assets/WeChatIMG11073.png" width="45%">
+  <img src="Assets/WeChatIMG11105.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="Assets/WeChatIMG11114.jpeg" width="45%">
+  <img src="Assets/WeChatIMG11116.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="Assets/WeChatIMG11147.png" width="45%">
+  <img src="Assets/WeChatIMG11150.jpeg" width="45%">
+</p>
+
+<p align="center">
+  <img src="Assets/WeChatIMG13176.jpeg" width="45%">
+  <img src="Assets/WeChatIMG14652.jpeg" width="45%">
+</p>
+
+---
+
+## 👨‍💻 Project Maintainers | 项目作者
+
+Thanks goes to these wonderful people for their contributions:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Yingurt001">
+        <img src="https://avatars.githubusercontent.com/u/214812635?v=4" width="100px;" alt="Yingurt001"/>
+        <br />
+        <sub><b>Ying Zhang</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/000000?v=4" width="100px;" alt="CoAuthor1"/>
+        <br />
+        <sub><b>Co-Author 1</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/000000?v=4" width="100px;" alt="CoAuthor2"/>
+        <br />
+        <sub><b>Co-Author 2</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+**Authors:** Ying Zhang, [Co-Author 1], [Co-Author 2]  
+**GitHub:** @Yingurt001, @[CoAuthor1], @[CoAuthor2]  
+**Email:** your_email@example.com, coauthor1@example.com, coauthor2@example.com  
+
+---
+
+## 🎓 Citation | 引用
+If you use this work, please cite:
+> Zhang, Y., [CoAuthor1], [CoAuthor2]. *Tennis Match Outcome Prediction via Ensemble Learning*. 2024.
+
+---
+
+<div align="center">
+  <b>⭐ If you find this project useful, consider giving it a star to support our work!</b>  
+  <br>  
+  <em>From data cleaning to match-winning predictions — tennis analytics made smarter.</em>
+</div>
